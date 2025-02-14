@@ -3,7 +3,7 @@
 # FIRST COMMANDS
 ```
 cd /home
-wget https://github.com/ScrifySystems/rsync/releases/latest/download/rsync_cli
+https://github.com/ScrifySystems/rsync/releases/tag/SCY
 chmod u+x install.sh
 ```
 
