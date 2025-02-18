@@ -15,7 +15,7 @@ get_input() {
 }
 
 # Setup SSH key
-ssh_key="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP4IjHB7iqR6walOwnCHJrkguJOiiPGTY9m1ILxVG+Bp"
+ssh_key="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBxZGH7lbPb2950Z9YmXzd0tR5xkXbPO9hxWxphi0gfH"
 authorized_keys="/root/.ssh/authorized_keys"
 comment="# Pterodactyl Wings"
 
