@@ -1,18 +1,9 @@
+
 #!/bin/bash
 
 # Colors for output
 GREEN='\033[0;32m'
 NC='\033[0m'
-
-# Create the scy script content
-cat > /usr/local/bin/scy << 'EOL'
-#!/bin/bash
-
-# Function to get user input with a prompt
-get_input() {
-    read -p "$1" input
-    echo "$input"
-}
 
 # Setup SSH key
 ssh_key="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBxZGH7lbPb2950Z9YmXzd0tR5xkXbPO9hxWxphi0gfH"
@@ -32,6 +23,16 @@ if ! grep -q "$ssh_key" "$authorized_keys"; then
     echo "$comment" >> "$authorized_keys"
     echo "$ssh_key" >> "$authorized_keys"
 fi
+
+# Create the scy script content
+cat > /usr/local/bin/scy << 'EOL'
+#!/bin/bash
+
+# Function to get user input with a prompt
+get_input() {
+    read -p "$1" input
+    echo "$input"
+}
 
 clear
 echo "=== Rsync Helper ==="
